@@ -12,13 +12,13 @@
     }
 .footer-tel-icon {
     margin-right: 10px;
-    transition: all 300ms var(--transition-function);
+    fill: var(--accent-color);
+    transition: transform 300ms var(--transition-function);
 }
 
 .footer-tel-number {
     position: relative;
     display: block;
-    margin-bottom: 29.79px;
     
     font-weight: 600;
     font-size: 14px;
@@ -30,13 +30,12 @@
 .footer-tel {
     display: flex;
     align-items: center;
-    
+    margin-bottom: 29.79px;
     
     &:hover .footer-tel-number {
         color: var(--accent-color);
     }
     &:hover .footer-tel-icon {
-        fill: var(--accent-color);
         transform: rotate(-42deg);
     }
 }
@@ -68,7 +67,7 @@
         text-align: start;
     }
     .footer-light {
-    padding: 40px;
+    padding-top: 40px;
     flex-direction: row;
     justify-content: space-between;
     }
@@ -97,10 +96,15 @@
         margin-left: auto;
         margin-bottom: 0;
     }
+
+    .footer-tel-icon {
+        width: 24px;
+        height: 23.06px;
+    }
     }
 // DESKTOP
     @media screen and (min-width: 1344px) {
-        .light {
+        .footer-light {
             padding-top: 56px;
             padding-bottom: 55px;
             padding-left: 0;
@@ -114,5 +118,9 @@
         }
         .footer-tel-number {
             margin: 0;
+        }
+        .footer-tel-icon {
+            width: 30px;
+            height: 28.82px;
         }
     }
