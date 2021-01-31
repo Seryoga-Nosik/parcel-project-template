@@ -97,7 +97,7 @@
     margin-right: 40px; 
 }
 .nav-item-desktop:last-of-type {
-    margin-right: 0;
+    margin-right: 60px;
 }
 
 /// HEADER BUTTONS
@@ -112,7 +112,7 @@
   }
   
   
-    .btn.btn-tablet {
+    .btn.header-btn {
       display: none;
       @media screen and (min-width: 768px) {
         display: block;
@@ -129,7 +129,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 0;
+        margin: 0;
+        
         font-size: 14px;
         line-height: 1.214;
         min-width: 354px;
@@ -184,4 +185,5 @@
             color: var(--accent-color);    
         }
     }
+    
 }
