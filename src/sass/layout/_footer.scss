@@ -1,0 +1,118 @@
+// FOOTER
+.footer-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer .logo{
+    display: inline-block;
+    margin-bottom: 20px;
+    }
+.footer-tel-icon {
+    margin-right: 10px;
+    transition: all 300ms var(--transition-function);
+}
+
+.footer-tel-number {
+    position: relative;
+    display: block;
+    margin-bottom: 29.79px;
+    
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.08em;
+    
+    color: var(--primary-text-color);
+} 
+.footer-tel {
+    display: flex;
+    align-items: center;
+    
+    
+    &:hover .footer-tel-number {
+        color: var(--accent-color);
+    }
+    &:hover .footer-tel-icon {
+        fill: var(--accent-color);
+        transform: rotate(-42deg);
+    }
+}
+.footer-instagram {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-dark {
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 21px; 
+    background-color: var(--dark-bg-color);   
+}
+.footer-copyrights {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+
+    color: var(--secondary-text-color); 
+}
+// TABLET
+ @media screen and (min-width: 768px) {
+    .footer-copyrights {
+        text-align: start;
+    }
+    .footer-light {
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .footer .logo {
+        margin-right: auto;
+        margin-bottom: 0;
+        display: inline;
+    }
+    
+    .footer-instagram {
+        position: relative;
+        margin-left: 48px;
+    
+        &::before {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: -50%;
+        height: 40px;
+        width: 1px;
+        background-color: var(--secondary-text-color);
+        }
+    }
+
+    .footer-tel-number {
+        margin-left: auto;
+        margin-bottom: 0;
+    }
+    }
+// DESKTOP
+    @media screen and (min-width: 1344px) {
+        .light {
+            padding-top: 56px;
+            padding-bottom: 55px;
+            padding-left: 0;
+            justify-content: space-between;
+        } 
+        .footer .logo {
+            align-items: start;
+        }
+        .footer-instagram {
+            margin-right: auto;
+        }
+        .footer-tel-number {
+            margin: 0;
+        }
+    }
