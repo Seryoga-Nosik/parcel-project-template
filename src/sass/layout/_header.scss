@@ -46,8 +46,6 @@
     border: none;
     background-color: transparent;
     z-index: 2;
-  
-    outline: 1px solid red; 
 }
 .menu-btn-icon {
     display: block;
@@ -60,7 +58,7 @@
     }
 }
 
-.menu-btn .icon-cross {
+.menu- .icon-cross {
     display: none;
 }
 .menu-btn.is-open .icon-cross {
@@ -74,8 +72,7 @@
 .nav-list {
     text-align: start;
     padding-top: 50px;
-    padding-bottom: 50px;
- outline: 1px solid salmon;   
+    padding-bottom: 50px; 
 }
 
 .nav-link {
@@ -86,10 +83,6 @@
     
     color: var(--white-color);
     transition: var(--transition-function);
-
-     &:visited {
-    color: var(--white-color);
-    }
 
     &:hover,
     &:focus,
@@ -106,6 +99,36 @@
 .nav-item-desktop:last-of-type {
     margin-right: 0;
 }
+
+/// HEADER BUTTONS
+.burger-menu .btn {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+    border: 2px solid var(--accent-color);
+  
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+  }
+  
+  
+  .btn.btn-tablet {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: 40px;
+  
+        background-color: transparent;
+        border: 2px solid var(--accent-color);
+        color: var(--accent-color);
+  
+      }
+      @media screen and (min-width: 1344px) {
+        margin-right: 0;
+      }
+    }
 // TABLET
 @media screen and (min-width: 768px) {
     .burger-menu {
