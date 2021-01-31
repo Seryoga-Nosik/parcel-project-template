@@ -44,12 +44,12 @@
 
 .menu-btn {
     display: inline-flex;
-    border: none;
+    border: 1px solid red;
+    // none;
     background-color: transparent;
     z-index: 2;
-  
-    outline: 1px solid red; 
 }
+
 .menu-btn-icon {
     display: block;
     height: 30px;
@@ -105,8 +105,39 @@
     margin-right: 40px; 
 }
 .nav-item-desktop:last-of-type {
-    margin-right: 0;
+    margin-right: 60px;
 }
+
+// HEADER BUTTONS
+.burger-menu .btn {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+    border: 2px solid var(--accent-color);
+  
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+  }
+  
+  
+  .btn.btn-tablet {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+        margin-top: 0;
+        margin-right: 40px;
+  
+        background-color: transparent;
+        border: 2px solid var(--accent-color);
+        color: var(--accent-color);
+  
+      }
+      @media screen and (min-width: 1344px) {
+        margin-right: 0;
+      }
+    }
+  
+
 // TABLET
 @media screen and (min-width: 768px) {
     .burger-menu {
