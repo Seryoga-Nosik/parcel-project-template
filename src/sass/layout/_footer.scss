@@ -33,9 +33,7 @@
 }
 
 .footer-tel-number {
-    position: relative;
-    display: block;
-    
+    position: relative;   
     font-weight: 600;
     font-size: 14px;
     line-height: 1.214;
@@ -116,11 +114,15 @@
         text-align: start;
     }
     }
+    
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+    .footer-light {
+        justify-content: space-between;
+    }
     .footer-logo {
-        @media screen and(min-width: 768px) and (max-width: 1343px){
-        margin-right: 203px;
+        margin-right: 0;
     }
-    }
+}
 // DESKTOP
     @media screen and (min-width: 1344px) {
 
