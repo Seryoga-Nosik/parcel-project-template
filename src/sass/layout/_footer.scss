@@ -67,8 +67,7 @@
  @media screen and (min-width: 768px) {
      .footer-box {
          display: flex;
-         margin-left: auto;
-         margin-right: auto;
+         justify-content: center;
      }
     .footer-copyrights {
         text-align: start;
@@ -76,11 +75,12 @@
     .footer-light {
     padding-top: 40px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     }
     .footer .logo {
+        width: 125px;
         margin-bottom: 0;
-        display: inline;
+        display: block;
     }
     
     .footer-instagram {
@@ -117,10 +117,15 @@
     }
 // DESKTOP
     @media screen and (min-width: 1344px) {
+    
         .footer-box {
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
         }
         .footer-light {
+            justify-content: center;
+           text-align: center;
             padding-top: 56px;
             padding-bottom: 55px;
             padding-left: 0;
@@ -130,9 +135,14 @@
         }
         .footer-instagram {
             margin-right: auto;
+            margin-left: 40px;
         }
         .footer-tel-number {
             margin: 0;
+            font-size: 30px;
+            line-height: 1.23;
+            
+            text-align: center;
         }
         .footer-tel-icon {
             width: 30px;
