@@ -1,8 +1,5 @@
 // FOOTER
 .footer-light {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -11,11 +8,24 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-.footer .logo{
-    display: inline-block;
     margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 29.79px;
+    
+    &:hover .footer-tel-number {
+        color: var(--accent-color);
     }
+    &:hover .footer-tel-icon {
+        transform: rotate(-42deg);
+    }
+}
+
 .footer-tel-icon {
     margin-right: 10px;
     fill: var(--accent-color);
@@ -33,21 +43,10 @@
     
     color: var(--primary-text-color);
 } 
-.footer-tel {
-    display: flex;
-    align-items: center;
-    margin-bottom: 29.79px;
-    
-    &:hover .footer-tel-number {
-        color: var(--accent-color);
-    }
-    &:hover .footer-tel-icon {
-        transform: rotate(-42deg);
-    }
-}
+
 .footer-instagram {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,24 +70,19 @@
 }
 // TABLET
  @media screen and (min-width: 768px) {
-     .footer-contacts {
-         display: flex;
-         justify-content: center;
-     }
-    .footer-copyrights {
-        text-align: start;
-    }
     .footer-light {
-    padding-top: 40px;
-    flex-direction: row;
-    justify-content: space-between;
-    }
-    .footer .logo {
-        width: 125px;
-        margin-bottom: 0;
-        display: block;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+    } 
+    .footer-logo {
+    justify-content: start;    
     }
     
+    .footer-contacts {
+         display: flex;
+     }
+
     .footer-instagram {
         position: relative;
         margin-left: 48px;
@@ -117,20 +111,20 @@
         width: 24px;
         height: 23.06px;
     }
-    .footer-tel {
-        margin-bottom: 0;
+
+    .footer-copyrights {
+        text-align: start;
+    }
+    }
+    .footer-logo {
+        @media screen and(min-width: 768px) and (max-width: 1343px){
+        margin-right: 203px;
     }
     }
 // DESKTOP
     @media screen and (min-width: 1344px) {
-    
-        .footer-contacts {
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-        }
+
         .footer-light {
-            justify-content: center;
            text-align: center;
             padding-top: 56px;
             padding-bottom: 55px;
@@ -138,6 +132,7 @@
         } 
         .footer .logo {
             align-items: start;
+            margin-right: 290px;
         }
         .footer-instagram {
             margin-right: auto;
