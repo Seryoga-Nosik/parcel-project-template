@@ -75,8 +75,7 @@
 .nav-list {
     text-align: start;
     padding-top: 50px;
-    padding-bottom: 50px;
- outline: 1px solid salmon;   
+    padding-bottom: 50px;  
 }
 
 .nav-link {
@@ -87,10 +86,6 @@
     
     color: var(--white-color);
     transition: var(--transition-function);
-
-     &:visited {
-    color: var(--white-color);
-    }
 
     &:hover,
     &:focus,
@@ -111,16 +106,21 @@
 // HEADER BUTTONS
 .burger-menu .btn {
     color: var(--accent-color);
-    background-color: var(--primary-white-color);
+    background-color: var(--white-color);
     border: 2px solid var(--accent-color);
   
     @media screen and (min-width: 768px) {
     display: none;
     }
+    @media screen and (min-width: 1344px) {
+        background-color: transparent;
+        border: 2px solid var(--accent-color);
+        color: var(--accent-color);
+    }
   }
   
   
-  .btn.btn-tablet {
+  .btn.header-btn {
       display: none;
       @media screen and (min-width: 768px) {
         display: block;
