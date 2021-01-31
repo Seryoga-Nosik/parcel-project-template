@@ -45,6 +45,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer-dark {
@@ -63,16 +65,20 @@
 }
 // TABLET
  @media screen and (min-width: 768px) {
+     .footer-box {
+         display: flex;
+         margin-left: auto;
+         margin-right: auto;
+     }
     .footer-copyrights {
         text-align: start;
     }
     .footer-light {
     padding-top: 40px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     }
     .footer .logo {
-        margin-right: auto;
         margin-bottom: 0;
         display: inline;
     }
@@ -95,6 +101,10 @@
     .footer-tel-number {
         margin-left: auto;
         margin-bottom: 0;
+       
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
     }
 
     .footer-tel-icon {
@@ -107,11 +117,13 @@
     }
 // DESKTOP
     @media screen and (min-width: 1344px) {
+        .footer-box {
+        align-items: center;
+        }
         .footer-light {
             padding-top: 56px;
             padding-bottom: 55px;
             padding-left: 0;
-            justify-content: space-between;
         } 
         .footer .logo {
             align-items: start;
