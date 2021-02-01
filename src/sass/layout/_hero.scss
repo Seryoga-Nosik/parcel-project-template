@@ -35,11 +35,11 @@
 /*mobile*/
 @media screen and (max-width: 767px) {
   .hero {
-    padding-top: 50px;
+    padding-top: 100px;
   }
   .hero-wave-box {
     min-height: 550px;
-    background-image: url('../images/hero/hero-mobile.png');
+    background-image: url("../images/hero/hero-mobile.png");
     background-repeat: no-repeat;
     background-position: center bottom;
   }
@@ -96,18 +96,18 @@
   screen and (min-resolution: 192dpi) and(max-width: 767px),
   screen and (min-resolution: 2dppx) and(max-width: 767px) {
   .hero-wave-box {
-    background-image: url('../images/hero/hero-mobile@2x.png');
+    background-image: url("../images/hero/hero-mobile@2x.png");
     background-size: 320px;
   }
 }
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1343px) {
   .hero {
-    padding-top: 70px;
+    padding-top: 128px;
   }
   .hero-wave-box {
     min-height: 450px;
-    background-image: url('../images/hero/hero-tablet.png');
+    background-image: url("../images/hero/hero-tablet.png");
     background-repeat: no-repeat;
     background-position: center bottom;
   }
@@ -160,7 +160,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1343px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1343px) {
   .hero-wave-box {
-    background-image: url('../images/hero/hero-tablet@2x.png');
+    background-image: url("../images/hero/hero-tablet@2x.png");
     background-size: 768px;
   }
 }
@@ -168,11 +168,12 @@
 /*desktop*/
 @media screen and (min-width: 1344px) {
   .hero {
-    padding-top: 45px;
+    padding-top: 136px;
   }
   .hero-wave-box {
-    min-height: 880px;
-    background-image: url('../images/hero/hero-desktop.png');
+    margin-top: -80px;
+    min-height: 878px;
+    background-image: url("../images/hero/hero-desktop.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -246,7 +247,12 @@
   screen and (min-resolution: 192dpi) and (min-width: 1344px),
   screen and (min-resolution: 2dppx) and (min-width: 1344px) {
   .hero-wave-box {
-    background-image: url('../images/hero/hero-desktop@2x.png');
+    background-image: url("../images/hero/hero-desktop@2x.png");
     background-size: 1344px cover;
+  }
+}
+@media screen and (min-width: 1720px) {
+  .hero-wave-box {
+    margin-top: 0;
   }
 }
